@@ -60,10 +60,6 @@ COPY docker/entrypoint.sh /sbin/entrypoint.sh
 RUN chmod 755 /sbin/entrypoint.sh
 RUN a2enmod headers rewrite expires
 
-#COPY . /var/www/app/
-
-#RUN cd /var/www/app/tools/ && composer install
-
 WORKDIR /var/www/app/
 EXPOSE 80 443
 
