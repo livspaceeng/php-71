@@ -24,7 +24,7 @@ RUN apt-get update && apt-get upgrade
 
 RUN apt-get install -y --force-yes apache2 memcached php7.1-common php7.1-dev php7.1-json php7.1-opcache php7.1-cli libapache2-mod-php7.1
 RUN apt-get install -y --force-yes php7.1 php7.1-mysql php7.1-fpm php7.1-curl php7.1-gd php7.1-mcrypt php7.1-mbstring
-RUN apt-get install -y --force-yes php7.1-bcmath php7.1-zip php-memcached php7.1-xml
+RUN apt-get install -y --force-yes php7.1-bcmath php7.1-zip php-memcached php7.1-xml php7.1-yaml
 
 #-- Configure PHP &Apache --
 RUN sed -i "s/error_reporting = .*/error_reporting = E_ALL/" /etc/php/7.1/apache2/php.ini
