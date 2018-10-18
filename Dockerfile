@@ -12,7 +12,7 @@ DEBIAN_FRONTEND=noninteractive
 RUN BUILD_DEPS='software-properties-common python-software-properties' \
 && dpkg-reconfigure locales \
 && apt-get install --no-install-recommends -y $BUILD_DEPS
-RUN apt-get update && apt-get upgrade
+RUN apt-get update && apt-get -y upgrade
 
 RUN add-apt-repository -y ppa:ondrej/php \
 && add-apt-repository -y ppa:ondrej/apache2 \
