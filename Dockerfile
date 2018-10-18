@@ -20,7 +20,7 @@ RUN add-apt-repository -y ppa:ondrej/php \
 
 RUN add-apt-repository ppa:ondrej/php
 RUN add-apt-repository ppa:chris-lea/redis-server
-RUN apt-get update && apt-get upgrade
+RUN apt-get update && apt-get -y upgrade
 
 RUN apt-get install -y --force-yes apache2 memcached php7.1-common php7.1-dev php7.1-json php7.1-opcache php7.1-cli libapache2-mod-php7.1
 RUN apt-get install -y --force-yes php7.1 php7.1-mysql php7.1-fpm php7.1-curl php7.1-gd php7.1-mcrypt php7.1-mbstring
