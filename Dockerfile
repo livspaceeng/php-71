@@ -58,7 +58,7 @@ COPY docker/configs/php.ini ${PHP_CONF_DIR}/apache2/conf.d/custom.ini
 COPY docker/entrypoint.sh /sbin/entrypoint.sh
 
 RUN chmod 755 /sbin/entrypoint.sh
-RUN a2enmod headers rewrite expires
+RUN a2enmod headers rewrite expires remoteip
 
 WORKDIR /var/www/app/
 EXPOSE 80 443
