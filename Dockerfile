@@ -1,4 +1,4 @@
-FROM ubuntu:xenial
+FROM ubuntu:xenial-20181113
 MAINTAINER Vyshakh P vyshakh.p@livspace.com
 
 ENV OS_LOCALE="en_US.UTF-8"
